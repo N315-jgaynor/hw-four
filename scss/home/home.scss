@@ -1,0 +1,57 @@
+.home {
+  height: 600px;
+  background-color: $site-grey;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   margin-top: -100px;
+
+  .home-callout {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    position: relative;
+    margin-top: 130px;
+    h1 {
+      font-family: CaveatBold;
+    }
+
+    p {
+      font-family: Lato;
+      text-align: center;
+      width: 190px;
+    }
+
+    .home-callout-one {
+      height: 360px;
+      width: 360px;
+      border-radius: 180px;
+      background-color: $site-red;
+      margin: auto;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .home-callout-two {
+      height: 170px;
+      width: 170px;
+      border-radius: 85px;
+      background-color: $site-bluegreen;
+      position: absolute;
+      right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      p {
+        font-size: 14px;
+        width: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.navHolder {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-logo {
+    width: 350px;
+    height: 80px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin: 15px auto 20px auto;
+      font-family: Caveat;
+    }
+
+    .nav-logo-img {
+      width: 80px;
+      height: 80px;
+      background-image: url(../../images/flexx-logo.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .links {
+    margin-right: 20px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Caveat;
+      font-size: 30px;
+      margin-left: 40px;
+    }
+  }
+
+  .bars {
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    margin-right: 20px;
+
+    .bar {
+      display: block;
+      width: 25px;
+      margin: 3px 0;
+      height: 3px;
+      background-color: #000;
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.bars.active {
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navHolder {
+    background-color: $site-purple;
+    z-index: 10;
+
+    .nav-logo {
+      color: white;
+    }
+
+    .links {
+      position: fixed;
+      width: 100vw;
+      opacity: 0;
+      top: 100px;
+      background-color: $site-purple;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease-in;
+
+      a {
+        margin: 30px auto;
+      }
+    }
+
+    .links.active {
+      opacity: 1;
+
+      a {
+        color: white;
+      }
+    }
+
+    .bars {
+      display: flex;
+
+      .bar {
+        background-color: white;
+      }
+    }
+  }
+}
