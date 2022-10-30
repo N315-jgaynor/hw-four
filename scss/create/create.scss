@@ -1,2 +1,56 @@
 .create {
+  min-height: 100vh;
+  background-color: $site-purple;
+  color: white;
+
+  h1 {
+    margin-left: 150px;
+    margin: 0 0 85px 150px;
+    padding-top: 130px;
+    font-family: CaveatBold;
+  }
+
+  .workout-container {
+    margin: auto 150px;
+    padding-bottom: 90px;
+
+    p {
+      font-size: 20px;
+      font-family: Lato;
+      margin: 80px auto -40px auto;
+    }
+
+    div {
+      input {
+        display: block;
+        width: 100%;
+        margin-top: 60px;
+        height: 40px;
+        font-size: 20px;
+        font-family: Lato;
+        background: transparent;
+        border: 0;
+        border-bottom: solid white 3px;
+      }
+
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    // button {
+    //   width: 422px;
+    //   height: 52px;
+    //   background-color: $site-red;
+    //   margin: 109px auto 90px auto;
+    //   color: white;
+    //   font-size: 20px;
+    //   font-family: Lato;
+    //   border-radius: 20px;
+    //   border: none;
+    // }
+  }
 }
+
+// for how to put icons at the end of the input:
+// https://stackoverflow.com/questions/31636233/insert-icon-in-the-end-of-input

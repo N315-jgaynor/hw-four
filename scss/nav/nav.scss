@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 960px) {
   .navHolder {
-    background-color: $site-purple;
+    background-color: $site-indigo;
     z-index: 10;
 
     .nav-logo {
@@ -86,7 +86,7 @@
       width: 100vw;
       opacity: 0;
       top: 100px;
-      background-color: $site-purple;
+      background-color: $site-indigo;
       display: flex;
       flex-direction: column;
       transition: all 0.3s ease-in;
@@ -113,3 +113,17 @@
     }
   }
 }
+
+html:not([data-scroll="0"]) {
+  .navHolder {
+    background-color: $site-indigo;
+    z-index: 10;
+    color: white;
+
+    .links a {
+      color: white;
+    }
+  }
+}
+
+// this was way overcomplicated, I tried to do something fancy and it didn't work.

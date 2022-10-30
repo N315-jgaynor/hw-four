@@ -19,6 +19,10 @@ p {
   margin-bottom: 16px;
 }
 
+#app {
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: Caveat;
   src: url(fonts/Caveat-Regular.ttf);
@@ -95,7 +99,7 @@ p {
 
 @media screen and (max-width: 960px) {
   .navHolder {
-    background-color: #6d435a;
+    background-color: #340068;
     z-index: 10;
   }
   .navHolder .nav-logo {
@@ -106,7 +110,7 @@ p {
     width: 100vw;
     opacity: 0;
     top: 100px;
-    background-color: #6d435a;
+    background-color: #340068;
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in;
@@ -127,6 +131,15 @@ p {
     background-color: white;
   }
 }
+html:not([data-scroll="0"]) .navHolder {
+  background-color: #340068;
+  z-index: 10;
+  color: white;
+}
+html:not([data-scroll="0"]) .navHolder .links a {
+  color: white;
+}
+
 .home {
   height: 600px;
   background-color: #fffcf9;
@@ -177,6 +190,41 @@ p {
 .home .home-callout .home-callout-two p {
   font-size: 14px;
   width: 100px;
+}
+
+.create {
+  min-height: 100vh;
+  background-color: #6d435a;
+  color: white;
+}
+.create h1 {
+  margin-left: 150px;
+  margin: 0 0 85px 150px;
+  padding-top: 130px;
+  font-family: CaveatBold;
+}
+.create .workout-container {
+  margin: auto 150px;
+  padding-bottom: 90px;
+}
+.create .workout-container p {
+  font-size: 20px;
+  font-family: Lato;
+  margin: 80px auto -40px auto;
+}
+.create .workout-container div input {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+  height: 40px;
+  font-size: 20px;
+  font-family: Lato;
+  background: transparent;
+  border: 0;
+  border-bottom: solid white 3px;
+}
+.create .workout-container div ::placeholder {
+  color: white;
 }
 
 footer {
