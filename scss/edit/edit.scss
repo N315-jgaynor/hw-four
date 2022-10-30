@@ -1,7 +1,7 @@
-.create {
+.edit {
   min-height: 100vh;
-  background-color: $site-purple;
-  color: white;
+  background-color: $site-bluegreen;
+  color: black;
 
   h1 {
     margin-left: 150px;
@@ -30,11 +30,11 @@
         font-family: Lato;
         background: transparent;
         border: 0;
-        border-bottom: solid white 3px;
+        border-bottom: solid black 3px;
       }
 
       ::placeholder {
-        color: white;
+        color: black;
       }
     }
   }
@@ -67,6 +67,3 @@
     margin: 30px auto;
   }
 }
-
-// for how to put icons at the end of the input:
-// https://stackoverflow.com/questions/31636233/insert-icon-in-the-end-of-input

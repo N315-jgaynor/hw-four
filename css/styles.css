@@ -226,6 +226,93 @@ html:not([data-scroll="0"]) .navHolder .links a {
 .create .workout-container div ::placeholder {
   color: white;
 }
+.create #submit {
+  width: 130px;
+  height: 45px;
+  color: white;
+  background-color: #340068;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+.create #edit {
+  width: 130px;
+  height: 45px;
+  color: white;
+  background-color: #340068;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+
+.edit {
+  min-height: 100vh;
+  background-color: #b1ede8;
+  color: black;
+}
+.edit h1 {
+  margin-left: 150px;
+  margin: 0 0 85px 150px;
+  padding-top: 130px;
+  font-family: CaveatBold;
+}
+.edit .workout-container {
+  margin: auto 150px;
+  padding-bottom: 90px;
+}
+.edit .workout-container p {
+  font-size: 20px;
+  font-family: Lato;
+  margin: 80px auto -40px auto;
+}
+.edit .workout-container div input {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+  height: 40px;
+  font-size: 20px;
+  font-family: Lato;
+  background: transparent;
+  border: 0;
+  border-bottom: solid black 3px;
+}
+.edit .workout-container div ::placeholder {
+  color: black;
+}
+.edit #submit {
+  width: 130px;
+  height: 45px;
+  color: white;
+  background-color: #340068;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+.edit #edit {
+  width: 130px;
+  height: 45px;
+  color: white;
+  background-color: #340068;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+}
 
 footer {
   height: 100px;
