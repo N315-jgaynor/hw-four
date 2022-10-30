@@ -90,10 +90,14 @@ function changeRoute() {
   if (pageID != "") {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
+      createListener();
+      editListener();
     });
   } else {
     $.get(`pages/home/home.html`, function (data) {
       $("#app").html(data);
+      createListener();
+      editListener();
     });
   }
 }
@@ -106,6 +110,4 @@ function initURLListener() {
 $(document).ready(function () {
   initURLListener();
   navListeners();
-  createListener();
-  editListener();
 });

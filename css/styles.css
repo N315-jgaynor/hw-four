@@ -316,8 +316,25 @@ html:not([data-scroll="0"]) .navHolder .links a {
 }
 
 footer {
-  height: 100px;
-  background-color: rosybrown;
+  height: 90px;
+  background-color: #340068;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: Caveat;
+  font-size: 20px;
+}
+footer p {
+  margin-left: 20px;
+}
+footer .links {
+  margin-right: 20px;
+}
+footer .links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
