@@ -35,6 +35,10 @@ p {
   font-family: Lato;
   src: url(fonts/Lato-Regular.ttf);
 }
+@font-face {
+  font-family: LatoItalic;
+  src: url(fonts/LatoItalic.ttf);
+}
 .navHolder {
   height: 100px;
   width: 100%;
@@ -109,6 +113,7 @@ p {
     position: fixed;
     width: 100vw;
     opacity: 0;
+    right: 1000px;
     top: 100px;
     background-color: #340068;
     display: flex;
@@ -120,6 +125,8 @@ p {
   }
   .navHolder .links.active {
     opacity: 1;
+    right: 0;
+    left: 0;
   }
   .navHolder .links.active a {
     color: white;
@@ -315,6 +322,81 @@ html:not([data-scroll="0"]) .navHolder .links a {
   margin: 30px auto;
 }
 
+.login {
+  min-height: 500px;
+  background-color: #ff6978;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login-container {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  margin: 150px auto 50px auto;
+  color: white;
+}
+.login .login-container input {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  height: 30px;
+  font-size: 15px;
+  font-family: Lato;
+  background: transparent;
+  border: 0;
+  border-bottom: solid white 3px;
+}
+.login .login-container h1 {
+  font-family: Lato;
+  font-size: 30px;
+}
+.login .login-container ::placeholder {
+  color: white;
+}
+.login .login-container .login-login {
+  margin: auto 0;
+  width: 300px;
+}
+.login .login-container .login-signup {
+  margin: auto 0;
+  width: 300px;
+}
+.login .login-container .login-signup p {
+  font-family: Lato;
+  font-style: italic;
+}
+.login .login-container #login-submit {
+  width: 210px;
+  height: 50px;
+  background-color: #b1ede8;
+  border-radius: 30px;
+  margin: 20px auto;
+  border: 0;
+  color: white;
+}
+.login .login-container #signup-submit {
+  width: 210px;
+  height: 50px;
+  background-color: #b1ede8;
+  border-radius: 30px;
+  margin: 20px auto;
+  border: 0;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .login {
+    min-height: 100px;
+  }
+  .login .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .login .login-container form {
+    margin-bottom: 50px;
+  }
+}
 footer {
   height: 90px;
   background-color: #340068;

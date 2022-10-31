@@ -85,6 +85,7 @@
       position: fixed;
       width: 100vw;
       opacity: 0;
+      right: 1000px;
       top: 100px;
       background-color: $site-indigo;
       display: flex;
@@ -98,6 +99,8 @@
 
     .links.active {
       opacity: 1;
+      right: 0;
+      left: 0;
 
       a {
         color: white;
@@ -120,8 +123,12 @@ html:not([data-scroll="0"]) {
     z-index: 10;
     color: white;
 
-    .links a {
-      color: white;
+    .links {
+      // right: 0;
+      // left: 0;
+      a {
+        color: white;
+      }
     }
   }
 }

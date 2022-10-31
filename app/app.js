@@ -94,11 +94,13 @@ function changeRoute() {
       editListener();
     });
   } else {
-    $.get(`pages/home/home.html`, function (data) {
+    $.get(`pages/login/login.html`, function (data) {
       $("#app").html(data);
       createListener();
       editListener();
     });
+
+    // remember to change this back
   }
 }
 

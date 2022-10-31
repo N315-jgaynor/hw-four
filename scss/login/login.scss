@@ -1,0 +1,86 @@
+.login {
+  min-height: 500px;
+  background-color: $site-red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-container {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    margin: 150px auto 50px auto;
+    color: white;
+
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      height: 30px;
+      font-size: 15px;
+      font-family: Lato;
+      background: transparent;
+      border: 0;
+      border-bottom: solid white 3px;
+    }
+
+    h1 {
+      font-family: Lato;
+      font-size: 30px;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    .login-login {
+      margin: auto 0;
+      width: 300px;
+    }
+
+    .login-signup {
+      margin: auto 0;
+      width: 300px;
+
+      p {
+        font-family: Lato;
+        font-style: italic;
+      }
+    }
+
+    #login-submit {
+      width: 210px;
+      height: 50px;
+      background-color: $site-bluegreen;
+      border-radius: 30px;
+      margin: 20px auto;
+      border: 0;
+      color: white;
+    }
+
+    #signup-submit {
+      width: 210px;
+      height: 50px;
+      background-color: $site-bluegreen;
+      border-radius: 30px;
+      margin: 20px auto;
+      border: 0;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .login {
+    min-height: 100px;
+
+    .login-container {
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
