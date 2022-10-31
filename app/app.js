@@ -83,6 +83,26 @@ function editListener() {
   });
 }
 
+function loginListener() {
+  $("#login-submit").click(function (e) {
+    e.preventDefault();
+    let userEmail = $("#email").val();
+    let userPassword = $("#password").val();
+    alert(userEmail + " " + userPassword);
+  });
+}
+
+function signupListener() {
+  $("#signup-submit").click(function (e) {
+    e.preventDefault();
+    let fname = $("#fname").val();
+    let lname = $("#lname").val();
+    let newUserEmail = $("#email").val();
+    let newUserPassword = $("#password").val();
+    alert(fname + " " + lname + " " + newUserEmail + " " + newUserPassword);
+  });
+}
+
 function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -92,12 +112,16 @@ function changeRoute() {
       $("#app").html(data);
       createListener();
       editListener();
+      loginListener();
+      signupListener();
     });
   } else {
-    $.get(`pages/login/login.html`, function (data) {
+    $.get(`pages/home/home.html`, function (data) {
       $("#app").html(data);
       createListener();
       editListener();
+      loginListener();
+      signupListener();
     });
 
     // remember to change this back
