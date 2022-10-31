@@ -4,7 +4,7 @@ This assignment called for a 1 page application in which create/edit forms were 
 
 # Web4 Link
 
-in-info-web4.informatics.iupui.edu/~jgaynor/hw-four/index.html
+[in-info-web4.informatics.iupui.edu/~jgaynor/hw-four/index.html](in-info-web4.informatics.iupui.edu/~jgaynor/hw-three/index.html)
 
 # Project Highlights
 
